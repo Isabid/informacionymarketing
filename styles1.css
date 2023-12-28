@@ -1,0 +1,106 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f3f3; /* fondo de la pizarra */
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+header .company-info {
+    text-align: center; /* Alinea el texto al centro */
+    flex-grow: 1; /* Permite que la información de la empresa ocupe el espacio restante */
+}
+
+header h1 {
+    font-size: 35px; /* Ajusta el tamaño de la letra de Información & Marketing */
+}
+
+header p {
+    font-size: 22px; /* Ajusta el tamaño de la letra de Consultoría Empresarial */
+}
+
+header .logo img {
+    max-height: 150px;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    white-space: nowrap; /* Evita saltos de línea */
+}
+
+nav a {
+    margin: 0 10px; /* Ajusta el espacio entre cada opción */
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s; /* Agrega transición suave al cambio de color */
+}
+
+nav a:hover,
+nav a:active,
+nav a:visited {
+    background-color: #007BFF; /* Cambia el color de fondo al pasar el mouse, hacer clic o visitar */
+    color: #fff; /* Cambia el color del texto al pasar el mouse, hacer clic o visitar */
+}
+
+section:target {
+    background-color: #f0f0f0; /* Cambia el color de fondo de la sección activa */
+    padding: 30px; /* Ajusta el espaciado de la sección activa según sea necesario */
+    border-radius: 10px; /* Añade esquinas redondeadas para destacar la sección activa */
+}
+
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s, color 0.3s; /* Agrega transición suave al cambio de color */
+}
+
+.dropdown-content a:hover,
+.dropdown-content a:active {
+    background-color: #007BFF; /* Cambia el color de fondo al pasar el mouse o hacer clic */
+    color: #fff; /* Cambia el color del texto al pasar el mouse o hacer clic */
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
