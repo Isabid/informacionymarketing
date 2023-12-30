@@ -23,15 +23,15 @@ header .company-info {
 }
 
 header h1 {
-    font-size: 35px; /* Ajusta el tamaño de la letra de Información & Marketing */
+    font-size: 45px; /* Ajusta el tamaño de la letra de Información & Marketing */
 }
 
 header p {
-    font-size: 22px; /* Ajusta el tamaño de la letra de Consultoría Empresarial */
+    font-size: 28px; /* Ajusta el tamaño de la letra de Consultoría Empresarial */
 }
 
 header .logo img {
-    max-height: 150px;
+    max-height: 250px;
 }
 
 nav {
@@ -159,6 +159,19 @@ social-icons {
     border-radius: 50%; /* Para hacer los íconos redondos (opcional) */
 }
 
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-column {
+    margin-right: 120px; /* Ajusta el margen entre la columna de texto y la imagen */
+}
 
 section {
     padding: 20px;
