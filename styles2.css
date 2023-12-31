@@ -17,6 +17,7 @@ header {
     text-align: center;
 }
 
+
 header .company-info {
     text-align: center; /* Alinea el texto al centro */
     flex-grow: 1; /* Permite que la información de la empresa ocupe el espacio restante */
@@ -170,7 +171,7 @@ social-icons {
 }
 
 .text-column {
-    margin-right: 120px; /* Ajusta el margen entre la columna de texto y la imagen */
+    margin-right: 0px; /* Ajusta el margen entre la columna de texto y la imagen */
 }
 
 section {
@@ -198,6 +199,9 @@ footer {
 
 /* Añadir estas reglas para hacer el diseño más receptivo */
 @media screen and (max-width: 768px) {
+    body {
+        font-size: 16px; /* Ajusta el tamaño de fuente */
+    }
     header {
         flex-direction: column;
     }
