@@ -172,7 +172,7 @@ social-icons {
 }
 
 .text-column {
-    margin-right: 0px; /* Ajusta el margen entre la columna de texto y la imagen */
+    margin-right: 120px; /* Ajusta el margen entre la columna de texto y la imagen */
 }
 
 section {
@@ -200,68 +200,28 @@ footer {
     cursor: pointer;
 }
 
-/* Añadir estas reglas para hacer el diseño más receptivo */
-@media screen and (max-width: 480px) {
-    body {
-        font-size: 16px; /* Ajusta el tamaño de fuente */
-    }
-    header {
-        flex-direction: column;
-    }
-
+/* Agregar regla para manejar dispositivos móviles */
+@media screen and (max-width: 768px) {
     section {
-        padding: 10px; /* Por ejemplo, reduce el padding en pantallas muy pequeñas */
-    }
-
-    header h1 {
-        font-size: 30px; /* Ajusta el tamaño de la letra en dispositivos móviles */
-    }
-
-    header p {
-        font-size: 18px; /* Ajusta el tamaño de la letra en dispositivos móviles */
-    }
-
-    nav {
-        flex-direction: column;
-    }
-
-    nav a {
-        margin: 5px 0;
-    }
-
-    .flex-container {
-        flex-direction: column;
+        flex-direction: column; /* Cambiar a columna en dispositivos móviles */
     }
 
     .column {
-        width: 100%;
-        margin-bottom: 20px;
+        padding: 10px; /* Reducir el relleno en dispositivos móviles */
     }
 
     .text-column {
-        margin-right: 0; /* Elimina el margen entre la columna de texto y la imagen en dispositivos móviles */
-    }
-
-    .dropdown-content,
-    .contacto-content {
-        position: static;
-        display: block;
-        background-color: transparent;
-        color: black; /* Color del texto en dispositivos móviles */
-        box-shadow: none; /* Elimina la sombra en dispositivos móviles */
-    }
-
-    .social-icons {
-        max-width: none; /* Elimina el ancho máximo en dispositivos móviles */
-        margin: 10px 0; /* Ajusta el espacio superior e inferior en dispositivos móviles */
-    }
-
-    .social-icons img {
-        width: 40px; /* Ajusta el tamaño de los íconos en dispositivos móviles */
-        height: 30px; /* Ajusta el tamaño de los íconos en dispositivos móviles */
-    }
-
-    footer {
-        padding: 5px; /* Ajusta el espaciado en dispositivos móviles */
+        margin-right: 0; /* Eliminar el margen en dispositivos móviles */
     }
 }
+
+/* Resto del CSS permanece igual */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f3f3;
+    color: #333;
+}
+
+/* ... Otras reglas de estilo ... */
