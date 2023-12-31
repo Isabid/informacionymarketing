@@ -168,6 +168,7 @@ social-icons {
 .column {
     flex: 1;
     padding: 20px;
+    width: 100%;
 }
 
 .text-column {
@@ -176,6 +177,8 @@ social-icons {
 
 section {
     padding: 20px;
+    width: 100%;
+    box-sizing: border-box; /* Asegura que el padding no aumente el ancho total */
 }
 
 footer {
@@ -198,12 +201,16 @@ footer {
 }
 
 /* Añadir estas reglas para hacer el diseño más receptivo */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     body {
         font-size: 16px; /* Ajusta el tamaño de fuente */
     }
     header {
         flex-direction: column;
+    }
+
+    section {
+        padding: 10px; /* Por ejemplo, reduce el padding en pantallas muy pequeñas */
     }
 
     header h1 {
