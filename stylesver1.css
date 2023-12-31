@@ -159,19 +159,6 @@ social-icons {
     border-radius: 50%; /* Para hacer los íconos redondos (opcional) */
 }
 
-.flex-container {
-    display: flex;
-    align-items: center;
-}
-
-.column {
-    flex: 1;
-    padding: 20px;
-}
-
-.text-column {
-    margin-right: 120px; /* Ajusta el margen entre la columna de texto y la imagen */
-}
 
 section {
     padding: 20px;
@@ -194,63 +181,4 @@ footer {
     text-decoration: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-/* Añadir estas reglas para hacer el diseño más receptivo */
-@media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-    }
-
-    header h1 {
-        font-size: 30px; /* Ajusta el tamaño de la letra en dispositivos móviles */
-    }
-
-    header p {
-        font-size: 18px; /* Ajusta el tamaño de la letra en dispositivos móviles */
-    }
-
-    nav {
-        flex-direction: column;
-    }
-
-    nav a {
-        margin: 5px 0;
-    }
-
-    .flex-container {
-        flex-direction: column;
-    }
-
-    .column {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .text-column {
-        margin-right: 0; /* Elimina el margen entre la columna de texto y la imagen en dispositivos móviles */
-    }
-
-    .dropdown-content,
-    .contacto-content {
-        position: static;
-        display: block;
-        background-color: transparent;
-        color: black; /* Color del texto en dispositivos móviles */
-        box-shadow: none; /* Elimina la sombra en dispositivos móviles */
-    }
-
-    .social-icons {
-        max-width: none; /* Elimina el ancho máximo en dispositivos móviles */
-        margin: 10px 0; /* Ajusta el espacio superior e inferior en dispositivos móviles */
-    }
-
-    .social-icons img {
-        width: 40px; /* Ajusta el tamaño de los íconos en dispositivos móviles */
-        height: 30px; /* Ajusta el tamaño de los íconos en dispositivos móviles */
-    }
-
-    footer {
-        padding: 5px; /* Ajusta el espaciado en dispositivos móviles */
-    }
 }
