@@ -204,7 +204,7 @@ footer {
     /* Otras reglas @media aquí */
 
     body {
-        overflow-x: hidden; /* Evita el desbordamiento horizontal */
+        margin-right: 0; /* Ajusta el margen derecho del cuerpo */
     }
 
     header .company-info {
