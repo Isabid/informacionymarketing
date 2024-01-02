@@ -203,9 +203,8 @@ footer {
 @media only screen and (max-width: 600px) {
     /* Otras reglas @media aquí */
 
-    header {
-        text-align: center;
-        flex-direction: column;
+    body {
+        overflow-x: hidden; /* Evita el desbordamiento horizontal */
     }
 
     header .company-info {
@@ -213,11 +212,11 @@ footer {
     }
 
     header h1, header p {
-        margin: 0; /* Elimina el margen para que no haya espacio entre el icono y el texto */
+        margin: 0;
     }
 
     header .logo {
-        margin-top: 10px; /* Agrega un margen superior al icono */
+        margin-top: 10px;
     }
 
     nav {
@@ -235,9 +234,16 @@ footer {
     .column {
         padding: 20px;
         text-align: center;
+        max-width: 100%; /* Ajusta el ancho máximo de las columnas al 100% */
+        box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
     }
 
     .text-column {
         margin-right: 0;
+    }
+
+    section img {
+        width: 100%; /* Hace que las imágenes ocupen el ancho completo del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
     }
 }
