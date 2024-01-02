@@ -207,6 +207,20 @@ footer {
         margin-right: 0; /* Ajusta el margen derecho del cuerpo */
     }
 
+    header {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección del eje principal a columna */
+        align-items: center; /* Centra los elementos en el eje transversal */
+    }
+
+    header .logo {
+        margin-top: 10px; /* Agrega un margen superior al logo para separarlo del texto */
+    }
+
+    header .logo img {
+        max-height: 100px; /* Ajusta la altura máxima del logo según sea necesario */
+    }
+
     header .company-info {
         margin-bottom: 10px;
     }
@@ -216,10 +230,7 @@ footer {
         text-align: center; /* Centra el texto */
     }
 
-    header .logo {
-        margin-top: 10px;
-        text-align: center; /* Centra el logo */
-    }
+
 
     nav {
         text-align: center;
