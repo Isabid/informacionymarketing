@@ -213,10 +213,12 @@ footer {
 
     header h1, header p {
         margin: 0;
+        text-align: center; /* Centra el texto */
     }
 
     header .logo {
         margin-top: 10px;
+        text-align: center; /* Centra el logo */
     }
 
     nav {
@@ -245,5 +247,10 @@ footer {
     section img {
         width: 100%; /* Hace que las imágenes ocupen el ancho completo del contenedor */
         height: auto; /* Mantiene la proporción de la imagen */
+    }
+
+    /* Ajustes para el espacio en blanco */
+    section {
+        overflow: hidden;
     }
 }
