@@ -13,7 +13,7 @@
             <p>Consultoría Empresarial</p>
         </div>
         <div class="logo">
-            <img class="ampliable" src="img/logo3.jpg" alt="Logo de Información & Marketing">
+            <img src="img/logo3.jpg" alt="Logo de Información & Marketing">
         </div>
     </header>
 
@@ -55,7 +55,7 @@
             </p>
         </div>
         <div class="column">
-            <img class="ampliable" src="img/consuliym13.jpg" width="300" height="200" alt="Imagen de Consultoría Empresarial">
+            <img src="img/consuliym13.jpg" width="300" height="200" alt="Imagen de Consultoría Empresarial">
         </div>
     </section>
 
@@ -72,7 +72,7 @@
              </p>
         </div>
         <div class="column">   
-            <img class="ampliable" src="img/consuliym1.jpg" width="300" height="200">
+            <img src="img/consuliym1.jpg" width="300" height="200">
         </div>
     </section>
 
@@ -87,7 +87,7 @@
             </p>
         </div>
         <div class="column">
-            <img class="ampliable" src="img/consuliym2.jpg" width="300" height="200">
+            <img src="img/consuliym2.jpg" width="300" height="200">
         </div>
     </section>
 
@@ -102,7 +102,7 @@
             </p>
         </div>
         <div class="column">
-            <img class="ampliable" src="img/consuliym5.jpg" width="300" height="200">
+            <img src="img/consuliym5.jpg" width="300" height="200">
         </div>
     </section>
 
@@ -116,7 +116,7 @@
             </p>
         </div>
         <div class="column">
-            <img class="ampliable" src="img/consuliym7.jpg" width="300" height="200">
+            <img src="img/consuliym7.jpg" width="300" height="200">
         </div>
     </section>
 
@@ -129,7 +129,7 @@
             </p>
         </div>
         <div class="column">
-            <img class="ampliable" src="img/consuliym9.jpg" width="300" height="200">
+            <img src="img/consuliym9.jpg" width="300" height="200">
         </div>
     </section>
 
@@ -143,7 +143,7 @@
             </p>
         </div>
         <div class="column">
-            <img class="ampliable" src="img/consuliym12.jpg" width="300" height="200">
+            <img src="img/consuliym12.jpg" width="300" height="200">
         </div>
     </section>
 
@@ -159,7 +159,7 @@
             <span class="resaltado">Dar clic sobre el Icono</span>
         </p>
         <a href="mailto:infoym2021@gmail.com" target="_blank">
-            <img src="img/email.png" width="100" height="80" alt="E-Mail">
+            <img src="img/email.png" alt="E-Mail">
         </a>
         <!-- Puedes agregar imágenes y contenido aquí -->
     </section>
@@ -169,7 +169,7 @@
         <p>Chatea con nosotros a través de WhatsApp. <span class="resaltado">Dar clic sobre el Icono</span>
         </p>
         <a href="https://wa.me/573213300807" target="_blank">
-            <img src="img/wa.png" width="100" height="80" alt="WhatsApp">
+            <img src="img/wa.png" alt="WhatsApp">
         </a>
         <!-- Puedes agregar imágenes y contenido aquí -->
     </section>
@@ -220,33 +220,6 @@
         document.getElementById('regresarAlInicio').addEventListener('click', function() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
-        // Obtén todas las imágenes ampliables
-        const imagenesAmpliables = document.querySelectorAll('.ampliable');
-
-        // Agrega un evento de clic a cada imagen ampliable
-        imagenesAmpliables.forEach((imagen) => {
-        let escalado = 1; // Factor de escala inicial
-        const factorDeIncremento = 0.2; // Cuánto incrementar el tamaño con cada clic
-
-        imagen.addEventListener('click', (event) => {
-            // Verifica si fue un clic normal o un doble clic
-            if (event.detail === 1) {
-            // Incrementa el factor de escala
-            escalado += factorDeIncremento;
-            // Limita el tamaño máximo al 200% del tamaño original (ajusta según tus necesidades)
-            escalado = Math.min(escalado, 2);
-
-            // Aplica el nuevo tamaño con una transición suave
-            imagen.style.transition = 'transform 0.3s ease';
-            imagen.style.transform = `scale(${escalado})`;
-            } else {
-            // Doble clic, restablece el tamaño original
-            escalado = 1;
-            imagen.style.transition = 'transform 0.3s ease';
-            imagen.style.transform = `scale(${escalado})`;
-            }
-        });
-        });
     </script>
 
 
