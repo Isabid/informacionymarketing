@@ -226,7 +226,13 @@ footer {
     }
 
     nav a {
+        display: block;
         margin: 5px 0;
+        white-space: nowrap; /* Evita el salto de línea */
+    }
+
+    .dropdown-content {
+        white-space: normal; /* Permite que el contenido del menú desplegable se muestre correctamente */
     }
 
     .flex-container {
