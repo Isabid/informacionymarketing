@@ -201,18 +201,11 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-    /* Agrega las reglas adicionales para dispositivos móviles aquí */
-
-    body {
-        font-family: 'Arial', sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f7f3f3;
-        color: #333;
-    }
+    /* Otras reglas @media aquí */
 
     header {
         text-align: center;
+        flex-direction: column;
     }
 
     header .company-info {
@@ -226,7 +219,6 @@ footer {
     header .logo {
         margin-top: 10px; /* Agrega un margen superior al icono */
     }
-
 
     nav {
         text-align: center;
@@ -242,9 +234,10 @@ footer {
 
     .column {
         padding: 20px;
-        text-align: center; /* Centra el contenido en dispositivos móviles */
+        text-align: center;
     }
 
     .text-column {
         margin-right: 0;
     }
+}
