@@ -219,6 +219,15 @@ footer {
         margin-bottom: 10px;
     }
 
+    header h1, header p {
+        margin: 0; /* Elimina el margen para que no haya espacio entre el icono y el texto */
+    }
+
+    header .logo {
+        margin-top: 10px; /* Agrega un margen superior al icono */
+    }
+
+
     nav {
         text-align: center;
     }
