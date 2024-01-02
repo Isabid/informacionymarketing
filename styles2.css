@@ -200,31 +200,36 @@ footer {
     cursor: pointer;
 }
 
-/* Estilo específico para dispositivos móviles */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
+    /* Estilos específicos para pantallas con un ancho máximo de 768px (típicamente dispositivos móviles) */
     header {
-        flex-direction: column;
+        flex-direction: column; /* Cambia la dirección del flex container a columna */
+        text-align: center; /* Alinea el texto al centro en la versión móvil */
     }
 
-    .logo img {
-        max-width: 100%; /* Ajustar el ancho de la imagen al 100% del contenedor */
+    header .company-info {
+        flex-grow: 0; /* Desactiva el crecimiento automático de la información de la empresa en la versión móvil */
+        margin-bottom: 10px; /* Agrega un margen inferior entre el título y la información de la empresa */
     }
 
-    .dropdown,
-    .contacto {
-        display: block;
-        text-align: center;
-        margin-bottom: 10px;
+    nav {
+        flex-direction: column; /* Cambia la dirección del flex container a columna en la versión móvil */
+        text-align: center; /* Alinea el texto al centro en la versión móvil */
     }
 
-    .dropdown-content,
-    .contacto-content {
-        position: static;
-        display: none;
+    nav a {
+        margin: 5px 0; /* Ajusta el espacio vertical entre cada opción en la versión móvil */
+    }
+
+    .flex-container {
+        flex-direction: column; /* Cambia la dirección del flex container a columna en la versión móvil */
     }
 
     .column {
-        padding: 10px;
-        text-align: justify;
+        padding: 20px;
+    }
+
+    .text-column {
+        margin-right: 0; /* Elimina el margen entre la columna de texto y la imagen en la versión móvil */
     }
 }
