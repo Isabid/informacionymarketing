@@ -230,8 +230,6 @@ footer {
         text-align: center; /* Centra el texto */
     }
 
-
-
     nav {
         text-align: center;
     }
@@ -261,9 +259,15 @@ footer {
         margin-right: 0;
     }
 
+
     section img {
         width: 100%; /* Hace que las imágenes ocupen el ancho completo del contenedor */
         height: auto; /* Mantiene la proporción de la imagen */
+    }
+
+    .imagen-pequeña {
+        width: 50%; /* Ajusta el tamaño específico para las imágenes grandes */
+        /* Puedes agregar más estilos según sea necesario */
     }
 
     /* Ajustes para el espacio en blanco */
