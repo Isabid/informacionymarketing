@@ -199,6 +199,11 @@ footer {
     border-radius: 5px;
     cursor: pointer;
 }
+/* Consulta de medios para Safari */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    /* Estilos específicos para Safari */
+}
+
 
 @media only screen and (max-width: 600px) {
     /* Otras reglas @media aquí */
