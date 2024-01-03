@@ -199,13 +199,9 @@ footer {
     border-radius: 5px;
     cursor: pointer;
 }
-/* Consulta de medios para Safari */
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-    /* Estilos específicos para Safari */
-}
 
 
-/*@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     /* Otras reglas @media aquí */
 
     body {
@@ -234,8 +230,18 @@ footer {
         margin: 0;
         text-align: center; /* Centra el texto */
     }
+     /* Ajuste para el menú en la sección nav */
+     nav {
+        overflow: visible; /* Asegura que el contenido desbordado sea visible */
+    }
 
-    nav {
+    nav a {
+        display: block; /* Muestra cada enlace en una nueva línea */
+        width: 100%; /* Asegura que cada enlace ocupe el ancho completo */
+        box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    }
+
+    /*nav {
         text-align: center;
     }
 
@@ -243,7 +249,7 @@ footer {
         display: block;
         margin: 5px 0;
         white-space: nowrap; /* Evita el salto de línea */
-    }
+    }*/
 
     .dropdown-content {
         white-space: normal; /* Permite que el contenido del menú desplegable se muestre correctamente */
