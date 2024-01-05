@@ -275,13 +275,4 @@ footer {
     section {
         overflow: hidden;
     }
-
-    .full-size {
-        width: 100vw; /* Ancho completo del viewport */
-        height: 100vh; /* Altura completa del viewport */
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1000; /* Asegura que la imagen esté en la parte superior */
-    }
 }
