@@ -247,26 +247,30 @@
             }
         });
         });
-                // Función para manejar el clic en las imágenes
         function toggleImageSize(event) {
             var currentImage = event.target;
-            
-            // Verificar si la imagen ya está en tamaño completo
-            var isFullSize = currentImage.classList.contains('full-size');
 
-            // Cambiar el tamaño de la imagen
-            if (isFullSize) {
-                currentImage.classList.remove('full-size');
+            // Obtener el tamaño actual de la imagen
+            var currentSize = parseInt(currentImage.style.width) || 100;
+
+            // Establecer un incremento deseado
+            var increment = 10;
+
+            // Verificar si la imagen ya está en el tamaño máximo
+            if (currentSize >= 200) {
+                // Si está en el tamaño máximo, reiniciar al tamaño inicial
+                currentImage.style.width = "100%";
             } else {
-                currentImage.classList.add('full-size');
+                // Si no está en el tamaño máximo, aumentar en incremento
+                currentImage.style.width = (currentSize + increment) + "%";
             }
         }
 
-        // Agregar el evento de clic a todas las imágenes
         var images = document.querySelectorAll('section img');
         images.forEach(function (image) {
             image.addEventListener('click', toggleImageSize);
         });
+
     </script>
 
 
