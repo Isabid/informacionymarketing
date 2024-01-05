@@ -235,10 +235,17 @@ footer {
         text-align: center;
     }
 
-    nav a {
+    /*nav a {
         display: block;
         margin: 5px 0;
         white-space: nowrap; /* Evita el salto de línea */
+    }*/
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+        word-wrap: normal; /* Alternativa a white-space: nowrap; */
+        white-space: normal; /* Alternativa a white-space: nowrap; */
     }
 
     .dropdown-content {
