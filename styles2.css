@@ -235,11 +235,13 @@ footer {
         text-align: center;
     }
 
-    /*nav a {
+    /*
+    nav a {
         display: block;
         margin: 5px 0;
-        white-space: nowrap; /* Evita el salto de línea */
-    }*/
+        white-space: nowrap; /* Evita el salto de línea 
+    } 
+    */
 
     nav a {
         display: block;
@@ -283,7 +285,4 @@ footer {
         overflow: hidden;
     }
 
-      .container {
-        touch-action: manipulation;
-    }
-}
+ }
