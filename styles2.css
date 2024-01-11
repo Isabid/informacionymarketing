@@ -235,20 +235,12 @@ footer {
         text-align: center;
     }
 
-    /*
+    
     nav a {
         display: block;
         margin: 5px 0;
-        white-space: nowrap; /* Evita el salto de línea 
+        white-space: nowrap; /* Evita el salto de línea */
     } 
-    */
-
-    nav a {
-        display: block;
-        margin: 5px 0;
-        max-width: 100%; /* Ajusta el ancho máximo según sea necesario */
-        white-space: normal;
-    }
 
     .dropdown-content {
         display: none;
@@ -258,7 +250,7 @@ footer {
         z-index: 1;
         width: max-content; /* Ajusta el ancho según sea necesario */
     }
-    
+
     .flex-container {
         flex-direction: column;
     }
