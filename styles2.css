@@ -246,8 +246,8 @@ footer {
     nav a {
         display: block;
         margin: 5px 0;
-        word-wrap: normal; /* Alternativa a white-space: nowrap; */
-        white-space: normal; /* Alternativa a white-space: nowrap; */
+        max-width: 100%; /* Ajusta el ancho máximo según sea necesario */
+        white-space: normal;
     }
 
     .dropdown-content {
