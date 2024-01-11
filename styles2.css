@@ -235,21 +235,14 @@ footer {
         text-align: center;
     }
 
-    
+
     nav a {
         display: block;
         margin: 5px 0;
         white-space: nowrap; /* Evita el salto de línea */
     } 
+    
 
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #333;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-        width: max-content; /* Ajusta el ancho según sea necesario */
-    }
 
     .flex-container {
         flex-direction: column;
