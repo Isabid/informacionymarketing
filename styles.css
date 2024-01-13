@@ -240,6 +240,7 @@ footer {
         display: block;
         margin: 5px 0;
         white-space: normal; /* Permite que el contenido se ajuste automáticamente */
+        -webkit-tap-highlight-color: transparent;
     }
 
     .dropdown-content {
