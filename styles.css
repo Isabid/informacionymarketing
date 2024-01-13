@@ -205,7 +205,6 @@ footer {
     /* Otras reglas @media aquí */
 
     body {
-        overflow-x: hidden; /* Evita el desplazamiento horizonta
         margin-right: 0; /* Ajusta el margen derecho del cuerpo */
     }
 
@@ -234,15 +233,13 @@ footer {
 
     nav {
         text-align: center;
-        padding: 10px; /* Ajusta el relleno para hacer el área de toque más grande */
+    
     }
 
-    nav a:hover,
-    nav a:active,
-    nav a:focus {
-        /* Estilos para cuando se hace clic o está enfocado */
-        background-color: #007BFF;
-        color: #fff;
+    nav a {
+        display: block;
+        margin: 5px 0;
+        white-space: normal; /* Permite que el contenido se ajuste automáticamente */
     }
 
     .dropdown-content {
