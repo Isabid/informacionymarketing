@@ -52,24 +52,3 @@ document.querySelectorAll('nav a').forEach(function(enlace) {
         // Lógica para desplegar el menú aquí
     });
 });
-
-function bloquearContextMenu(event) {
-    // Obtén el elemento sobre el cual se hizo clic con el botón derecho
-    var elementoClicado = event.target;
-
-    // Verifica si el elemento es uno de los que deseas bloquear
-    if (
-        elementoClicado.tagName === 'A' &&
-        (elementoClicado.getAttribute('href') === '#consultoria' ||
-            elementoClicado.getAttribute('href') === '#asesoria' ||
-            elementoClicado.getAttribute('href') === '#proyectos' ||
-            elementoClicado.getAttribute('href') === '#procesos')
-    ) {
-        // Bloquea el menú contextual solo para esos elementos
-        event.preventDefault();
-        return false;
-    }
-
-    // Permite el menú contextual para otros elementos
-    return true;
-}
