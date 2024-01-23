@@ -277,10 +277,5 @@ footer {
     section {
         overflow: hidden;
     }
-
-    .elemento-sin-menu-contextual {
-        -webkit-touch-callout: none; /* Desactiva el menú contextual en Safari */
-        user-select: none; /* Desactiva la selección de texto en otros navegadores */
-    }
-    
+   
 }
