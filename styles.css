@@ -200,6 +200,11 @@ footer {
     cursor: pointer;
 }
 
+#sobre-nosotros a {
+    text-decoration: none;
+  }
+  
+
 
 @media only screen and (max-width: 600px) {
     /* Otras reglas @media aquí */
