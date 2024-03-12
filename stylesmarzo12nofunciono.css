@@ -17,7 +17,6 @@ header {
     text-align: center;
 }
 
-
 header .company-info {
     text-align: center; /* Alinea el texto al centro */
     flex-grow: 1; /* Permite que la información de la empresa ocupe el espacio restante */
@@ -233,16 +232,19 @@ footer {
 
     nav {
         text-align: center;
+    
     }
-
 
     nav a {
         display: block;
         margin: 5px 0;
-        white-space: nowrap; /* Evita el salto de línea */
-    } 
-    
+        white-space: normal; /* Permite que el contenido se ajuste automáticamente */
+        -webkit-tap-highlight-color: transparent;
+    }
 
+    .dropdown-content {
+        white-space: normal; /* Permite que el contenido del menú desplegable se muestre correctamente */
+    }
 
     .flex-container {
         flex-direction: column;
@@ -274,5 +276,5 @@ footer {
     section {
         overflow: hidden;
     }
-
- }
+   
+}
