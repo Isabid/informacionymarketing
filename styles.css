@@ -7,11 +7,6 @@ body {
     color: #333;
 }
 
-body a {
-    text-decoration: none !important; /* eliminar cualquier posibilidad de subrayado
-  }
-  
-
 header {
     display: flex;
     justify-content: space-between;
