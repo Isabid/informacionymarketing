@@ -17,7 +17,6 @@ header {
     text-align: center;
 }
 
-
 header .company-info {
     text-align: center; /* Alinea el texto al centro */
     flex-grow: 1; /* Permite que la información de la empresa ocupe el espacio restante */
